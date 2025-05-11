@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-mgmt-iotcentral
-  version: 9.0.0
+  version: 10.0.0b2
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-mgmt-iotcentral-${{ version }}.zip
-  sha256: 64df73df449a6f3717f3d0963e5869224ed3e6216c79de571493bea7c1b52cb6
+  sha256: 0366753a58884951de5554872453b0b3281a0147fd2dc97cec048a589f08c6e4
 
 build:
   number: 0
@@ -24,9 +24,10 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - msrest >=0.6.21
+    - msrest >=0.7.1
     - azure-common >=1.1,<2.dev0
-    - azure-mgmt-core >=1.2.0,<2.0.0
+    - azure-mgmt-core >=1.3.2,<2.0.0
+    - typing-extensions >=4.3.0
 
 tests:
   - python:
