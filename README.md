@@ -32,14 +32,14 @@ Current release info
 Installing azure-mgmt-iotcentral
 ================================
 
-Installing `azure-mgmt-iotcentral` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `azure-mgmt-iotcentral` from the `conda-forge/label/azure-mgmt-iotcentral_rc` channel can be achieved by adding `conda-forge/label/azure-mgmt-iotcentral_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/azure-mgmt-iotcentral_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `azure-mgmt-iotcentral` can be installed with `conda`:
+Once the `conda-forge/label/azure-mgmt-iotcentral_rc` channel has been enabled, `azure-mgmt-iotcentral` can be installed with `conda`:
 
 ```
 conda install azure-mgmt-iotcentral
@@ -54,26 +54,26 @@ mamba install azure-mgmt-iotcentral
 It is possible to list all of the versions of `azure-mgmt-iotcentral` available on your platform with `conda`:
 
 ```
-conda search azure-mgmt-iotcentral --channel conda-forge
+conda search azure-mgmt-iotcentral --channel conda-forge/label/azure-mgmt-iotcentral_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search azure-mgmt-iotcentral --channel conda-forge
+mamba search azure-mgmt-iotcentral --channel conda-forge/label/azure-mgmt-iotcentral_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search azure-mgmt-iotcentral --channel conda-forge
+mamba repoquery search azure-mgmt-iotcentral --channel conda-forge/label/azure-mgmt-iotcentral_rc
 
 # List packages depending on `azure-mgmt-iotcentral`:
-mamba repoquery whoneeds azure-mgmt-iotcentral --channel conda-forge
+mamba repoquery whoneeds azure-mgmt-iotcentral --channel conda-forge/label/azure-mgmt-iotcentral_rc
 
 # List dependencies of `azure-mgmt-iotcentral`:
-mamba repoquery depends azure-mgmt-iotcentral --channel conda-forge
+mamba repoquery depends azure-mgmt-iotcentral --channel conda-forge/label/azure-mgmt-iotcentral_rc
 ```
 
 
