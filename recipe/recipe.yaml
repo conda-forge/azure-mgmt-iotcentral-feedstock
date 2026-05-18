@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: azure-mgmt-iotcentral
-  version: 9.0.0
+  version: "9.0.1"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-mgmt-iotcentral-${{ version }}.zip
-  sha256: 64df73df449a6f3717f3d0963e5869224ed3e6216c79de571493bea7c1b52cb6
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: 43e398902d4c00c3e2f49b38ff140801793b721a9182e0e4c8c3fede36798468
 
 build:
   number: 0
